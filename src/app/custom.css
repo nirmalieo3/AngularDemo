@@ -1,0 +1,32 @@
+h1{  
+    color:red;  
+    font-weight:bold;  
+    font-size: 30px;   
+}  
+h2{  
+    color:blue;  
+    font-size: 20px;  
+}  
+  
+p{  
+    color:brown;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}  
+.red {color:red;}  
+.blue {color:blue}  
+.cyan {color : cyan}  
+.brown {color : brown} 
+
+table td {
+    border: 1px solid blue;
+    padding: 20px;
+    background-color: aquamarine;
+}
+table thead td  {
+    background-color: burlywood;
+
+}
+
+
+
+

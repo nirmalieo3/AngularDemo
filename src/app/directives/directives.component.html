@@ -1,0 +1,32 @@
+<div>
+    <h3>This is a Attribute Directives</h3>
+    <span [class.red] = "true">Attribute change</span>
+    <br /> <br />
+    <span [ngClass] = "{'blue':true}">AttributeChange</span>
+    <br /><br />
+    <span [ngStyle] = "{'font-size': '34px', 'color': 'green'}" >Attribute Change by using ngStyle</span>
+     <br /><br />
+    <span [class.cyan] = "showColor">Attribute change</span>
+    <br /><br />
+    <span [ngClass]= "{'brown': showColor}">Attribute change</span>
+    <br /><br />
+    <input type="button" value="Change Color" (click)="changeColor()">
+    <br /><br />
+    <span [class.cyan]="showColor">Attribute Change</span><br /><br />  
+    <span [ngClass]="{'cyan': showColor, 'red':!showColor}">Attribute Change</span>
+    <br /><br/>
+</div>
+<div>
+    <h1>Structurall Directives *ngIf</h1>
+    <input type="button" value="{{caption}}" (click)="changeData()">
+    <br />
+    <h2 *ngIf="showInfo"><span>Demonstrate of Structural Directives--*ngIf</span></h2>
+</div>
+<div>
+    <h2>*ngFor Demo</h2>
+    <ul>
+        <li *ngFor="let product of productList ">
+            {{product}}
+        </li>
+    </ul>
+</div>

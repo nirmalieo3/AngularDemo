@@ -1,0 +1,79 @@
+
+<!--<h2>Template Driven Form</h2>  
+<div>  
+    <form #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">  
+        <table style="width:60%;" cellpadding="5" cellspacing="5">  
+            <tr>  
+                <td style="width :40%;">  
+                    <label for="username">User Name</label>  
+                </td>  
+                <td style="width :60%;">  
+                    <input type="text" name="username" id="username" [(ngModel)]="formData.username" required>  
+                </td>  
+            </tr>  
+            <tr>  
+                <td style="width :40%;">  
+                    <label for="email">Email</label>  
+                </td>  
+                <td style="width :60%;">  
+                    <input type="text" name="email" id="email" [(ngModel)]="formData.email" required>  
+                </td>  
+            </tr>  
+            <tr>  
+                <td style="width :40%;">  
+                    <label for="password">Password</label>  
+                </td>  
+                <td style="width :60%;">  
+                    <input type="password" name="password" id="password" [(ngModel)]="formData.password" required>  
+                </td>  
+            </tr>  
+            <tr>  
+                <td style="width :40%;"></td>  
+                <td style="width :60%;">  
+                    <button type="submit">Sign Up</button>  
+                </td>  
+            </tr>  
+        </table>  
+    </form>  
+    <div *ngIf="showMessage">  
+        <h3>Thanks You {{formData.username}} for registration</h3>  
+    </div>  
+</div>  -->
+<h2>Template Driven Form</h2>
+<form #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">
+ <table style="width:60%" cellpadding="5" cellspacing="5">
+   <tr>
+     <td style="width:40%">
+      <label for="username">UserName</label>
+     </td>
+     <td style="width:60%">
+      <input type="text" name="username" id="username" [(ngModel)]="formData.username" required >
+     </td>
+   </tr>
+   <tr>
+    <td style="width:40%">
+     <label for="email">Email</label>
+    </td>
+    <td style="width:60%">
+     <input type="text" name="email" id="email" [(ngModel)]="formData.email" required >
+    </td>
+  </tr>
+  <tr>
+    <td style="width:40%">
+     <label for="password">Password</label>
+    </td>
+    <td style="width:60%">
+     <input type="password" name="password" id="password" [(ngModel)]="formData.password" required >
+    </td>
+  </tr>
+  <tr>
+    <td style="width:40%"></td>
+    <td style="width:60%">
+      <button type="submit">Sign Up</button>
+    </td>
+  </tr>
+ </table>
+</form>
+<div *ngIf="showMessage">
+  <h3>Thank you {{formData.username}} for registration</h3>
+</div>

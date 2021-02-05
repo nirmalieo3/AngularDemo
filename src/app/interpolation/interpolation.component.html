@@ -1,0 +1,45 @@
+<div class="full">
+<div class="one">
+    <h1 class="main">Interpolation Examples</h1>
+ <div class="sub"> 
+    <span>Current Number is {{value1}}</span>      
+    <br /><br />    
+    <span>Current Number is {{value1 | currency}}</span>  
+    <br /><br />  
+    <span>Current Number is {{dt1}}</span>  
+    <br /><br />  
+    <span>Current Number is {{dt1 | date}}</span>  
+    <br /><br />  
+    <span>Status is {{status}}</span>  
+    <br /><br />  
+    <span>{{status ? "This is correct status" :"This is false status"}}</span>  
+    <br /><br />  
+    <span>{{returnString()}}</span>  
+</div>
+</div>
+<div class="one">
+  <h1 class="main">Property Binding</h1>
+<div class="sub">
+  <span>Display value in Input controls:<input [value] = "value1"></span>
+</div>
+</div>
+<div class="one">
+    <h1 class="main">Event Binding</h1>
+<div class="sub">
+    <input type="button" value="click" class="btn-primary" (click)="showAlert()" >
+    <br /><br/>
+    <input type="button" value="Moues Enter" class="btn-primary" (mouseenter)="showAlert()" >
+</div>
+</div>
+<div class="one">
+    <h1 class="main">Two way Binding</h1>
+ <div class="sub">
+    <span>Enter your Name</span>
+    <input type="text" [(ngModel)]="val" />
+  </div>
+  <div class="sub">
+    <span>Your Name :- </span>
+    <span>{{val}}</span>
+  </div>
+ </div>
+</div>
