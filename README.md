@@ -9,3 +9,10 @@ deploying to github
 . git add .
 . git commit -m "New App"
 . ng deploy --base-href=AngularDemo
+commit to main
+git init
+git add
+git commit
+git branch -M main
+git remote add origin http ----
+git push -u origin main
